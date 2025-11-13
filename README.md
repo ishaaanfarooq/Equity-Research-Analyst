@@ -1,40 +1,63 @@
-# 🧠 Equity Research Analyst – News & Market Intelligence Tool
+# 🧠 Equity Research Analyst – AI-Powered Market Intelligence Tool
 
-Analyze stock market news and financial reports directly from URLs.  
-Built with **LangChain**, **Llama (via Ollama)**, and **FAISS** for efficient retrieval-based Q&A.
+A modern, fully local **Equity Research & News Analysis AI** that can analyze:
+
+### ✔ News articles  
+### ✔ Financial reports  
+### ✔ Market research  
+### ✔ YouTube videos (ANY video — Whisper transcription)
+
+Built using **LangChain**, **Ollama (Llama 3)**, **FAISS**, **Playwright**, **yt-dlp**, **Whisper**, and a stunning **Glassmorphism UI**.
 
 ---
 
-## 🚀 Features
-- 🔗 Load news or financial articles via URLs
-- ⚙️ Automatically extract and process text
-- 🧬 Generate vector embeddings using HuggingFace
-- ⚡ Efficient retrieval using FAISS
-- 💬 Ask natural language questions and get summarized insights
-- 💾 Local FAISS storage for fast repeated analysis
+## ✨ Features
+
+### 🔍 **1. Multi-Source Content Extraction**
+- Paste **any news article URL**
+- Paste **any YouTube link** (supports: no captions, region-locked, Shorts, podcasts, aged videos)
+- Auto-scraped using **Playwright** (for articles)
+- Auto-transcribed using **Whisper + yt-dlp** (for YouTube)
+
+### 🧠 **2. Local AI Processing**
+- Uses **Llama3** via **Ollama** (no API key needed)
+- Embeddings via **HuggingFace MiniLM**
+- Fast local retrieval using **FAISS**
+
+### 💬 **3. Ask Natural Questions**
+After processing, ask:
+- “Summarize the key insights.”
+- “What risks does the article mention?”
+- “Explain this video like I'm a beginner.”
+- “What is the market outlook based on this content?”
+
+### 🎨 **4. Modern Glassmorphism UI**
+- Apple/Vercel style glass cards  
+- Neon gradients  
+- Smooth blur effects  
+- Clean sidebar inputs  
+- Professionally styled result layout  
 
 ---
 
 ## 🧩 Tech Stack
-- **LangChain**
-- **FAISS**
-- **Ollama (Llama models)**
-- **Streamlit**
-- **Python 3.10+**
+
+| Layer | Technology |
+|-------|------------|
+| UI | Streamlit + Custom CSS (Glassmorphism) |
+| LLM | Llama 3 (via Ollama) |
+| Embeddings | HuggingFace MiniLM |
+| Vector DB | FAISS |
+| Web Scraping | Playwright |
+| Audio Transcription | Whisper + yt-dlp |
+| Logic Framework | LangChain |
 
 ---
 
-## 🧰 Installation
+## 🛠️ Installation
+
+### 1️⃣ Clone the repository
 
 ```bash
-# Clone repository
 git clone https://github.com/ishaaanfarooq/Equity-Research-Analyst.git
 cd Equity-Research-Analyst
-
-# Create virtual environment
-python3 -m venv venv
-source venv/bin/activate  # For Ubuntu/Mac
-venv\Scripts\activate     # For Windows
-
-# Install dependencies
-pip install -r requirements.txt
